@@ -436,16 +436,21 @@ nav ul li {
         gap: 2rem;
     }
 
-    .popular-grid .astronauta2 {
-        order: 2;
-    }
-
-    .popular .astronauta3 {
-        order: 3;
-    }
-
     .popular .spacing {
         display: none;
+    }
+
+    .melhores-artista {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 240vh;
+        padding-right: 5rem;
+    }
+
+    .artistas-grid {
+        grid-template-columns: 1fr;
     }
 
 }
