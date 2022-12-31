@@ -480,11 +480,12 @@ nav ul li {
     .footer-two {
         padding-right: 10rem;
         border-right: none;
+        flex-wrap: wrap;
     }
 
     .footer-three {
         padding: 10rem 0;
-        padding-left: 10rem;
+        padding-left: 5rem;
         flex-wrap: wrap;
     }
 
