@@ -358,9 +358,6 @@ nav ul li {
 
 @media (max-width: 80rem) {
 
-    body {
-        overflow-x: hidden;
-    }
 
     .header {
         height: 260vh;
@@ -462,7 +459,7 @@ nav ul li {
     }
 
     .footer-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 500px;
         grid-template-areas:  "main"
         "form"
         "menu"
@@ -482,13 +479,17 @@ nav ul li {
 
     .footer-two {
         padding-right: 10rem;
+        border-right: none;
     }
 
     .footer-three {
-        padding: 10rem 4rem 10rem 2rem;
+        padding: 10rem 0;
+        padding-left: 10rem;
     }
+
 
     .footer-four {
         flex-direction: column;
+        padding-top: 4rem;
     }
 }
