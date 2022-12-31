@@ -359,7 +359,7 @@ nav ul li {
 @media (max-width: 80rem) {
 
     .header {
-        height: 300vh;
+        height: 240vh;
     }
 
     .header-grid {
@@ -376,7 +376,7 @@ nav ul li {
 
     .header-img-grid {
         margin-top: 30rem;
-        grid-template-columns: repeat(4, 90px);
+        grid-template-columns: repeat(4, 80px);
     }
 
 }
