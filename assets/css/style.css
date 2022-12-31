@@ -485,6 +485,7 @@ nav ul li {
     .footer-three {
         padding: 10rem 0;
         padding-left: 10rem;
+        flex-wrap: wrap;
     }
 
 
