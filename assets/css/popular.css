@@ -1,0 +1,74 @@
+.popular {
+    background: var(--body-background);
+    height: 150vh;
+}
+
+.popular .h1-title {
+    margin: 10rem 0;
+    font-size: 4rem;
+}
+
+.popular-grid {
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+    gap: 50rem;
+    position: relative;
+    width: 54vw;
+    height: 120vh;
+}
+
+
+
+.popular-grid .ajuste {
+    width: 26vw;
+}
+
+.popular .spacing {
+    background: rgba(204, 204, 204, 0.652);
+    position: absolute;
+    width: 0.1rem;
+    height: 103vh;
+    top: 1rem;
+    left: 90%;
+}
+
+
+.astronauta-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subtitle {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+
+.subtitle p {
+    font-size: 1.2rem;
+}
+
+.subtitle span {
+    margin-right: 1rem;
+}
+
+
+
+.arrow-white {
+    margin-left: 10rem;
+}
+
+.ajustar {
+    display: flex;
+    width: 26vw;
+}
+
+.margin {
+    margin-bottom: 10rem;
+}

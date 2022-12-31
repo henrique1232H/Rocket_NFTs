@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root {
+  --body-background: #0e0e0e;
+  --color-logo: #ff5b50;
+  --card-color: #252525;
+  --text-color: #fff;
+  --subtitle-color: #5a5757;
+  --black-text: #000;
+  --color-input: #0D0D0D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+p {
+    font-size: 1.9rem;
+    color: #ccc;
+}
+
+.color {
+    color: var(--color-logo);
+}
+
+h2 {
+    color: white;
+    font-size: 3rem;
+}
+
+h3 {
+    color: var(--text-color);
+}
+
+span {
+    color: var(--color-logo);
+}
+
+.padding {
+    padding: 3rem 4rem;
+}
+
+.venda {
+    background: var(--body-background);
+}
+
+
+.venda-grid {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-areas: "area1 area2"
+    "area1 area3";
+    border-bottom: 1px solid #ccc;
+}
+
+.venda-grid .venda-text {
+    grid-area: area1;
+    width: 22rem;
+    height: 46rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--subtitle-color);
+    border-bottom: 1px solid var(--subtitle-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.venda-text h2 {
+    font-size: 3rem;
+    
+}
+
+.venda-text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.venda-grid div:nth-child(2) {
+    height: 38vh;
+    grid-area: area2;
+    border-bottom: 1px solid var(--subtitle-color);
+}
+
+.venda-grid div:nth-child(3) {
+    background-image: url("../img/banner.png");
+    background-position: center center;
+    background-size: cover;
+    height: 31.4vh;
+    grid-area: area3;
+}
+
+.venda-text-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.venda-text-two p {
+    font-size: 1.5rem;
+}
+
+.venda-text-two .a-venda {
+    display: block;
+    margin-top: 5rem;
+    color: var(--text-color);
+}
+
+.venda-text-two div:nth-child(1) {
+    height: 19rem;
+    width: 39rem;
+}
+
+.venda-text-two div:nth-child(2) {
+    height: 19rem;
+    width: 39rem;
+    margin-right: 10rem;
+    border-bottom: none;
+}
+
+.a-text {
+    color: var(--color-logo);
+}
+
+
+
+.melhores-artista {
+    background: var(--body-background);
+    height: 110vh;
+}
+
+.melhores-artista h1 {
+    padding: 10rem 6rem 10rem 0rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.artistas-grid {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10rem;
+}
+
+.artistas-grid div {
+    background: var(--card-color);
+    height: 12rem;
+    width: 30rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.artistas-grid .se {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.artistas-grid div:hover {
+    background: var(--color-logo);
+}
+
+
+.artistas-grid img {
+    padding: 2rem 0rem 2rem 2rem ;
+}
+
+
+.artistas-grid .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-left: 1rem;
+    padding-top: 4rem;
+    width: 100%;
+}
+
+.artistas-grid .flex:hover {
+    color: white;
+}
+
+.flex p {
+    font-size: 1.5rem;
+}
+
+
+.a-artista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 ;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-right: 5rem;
+    
+}
+
+.a-artista a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.a-artista a img {
+    margin-left: 1rem;
+}
+
+
+.fotografia-subtitle {
+    color: var(--color-logo);
+}
+
+footer {
+    background: var(--card-color);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 60vh 1fr;
+    grid-template-areas: 
+    "main main"
+    "form menu"
+    "footer footer";
+}
+
+.footer-grid .footer-one {
+    grid-area: main;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:1px solid #5a5757;
+    padding: 0 10rem 0rem 6rem;
+}
+
+.footer-one img {
+    height: 4vh;
+}
+
+.footer-one .voltar {
+    background: var(--color-logo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 10vh;
+}
+
+.footer-two {
+    grid-area: form;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--subtitle-color);
+    border-bottom: 1px solid var(--subtitle-color);
+}
+.footer-two h1 {
+    display: block;
+    height: 6rem;
+    width: 20rem;
+    margin-bottom: 2rem;
+
+}
+
+.footer-two form {
+    position: relative;
+    margin-right: 5rem;
+}
+
+form input {
+    border: none;
+    background: var(--color-input);
+    color: var(--text-color);
+    padding: 0 1rem;
+    height: 4rem;
+    outline: none;
+}
+
+form button {
+    position: absolute;
+    height: 4rem;
+    border: none;
+    width: 8rem;
+    background: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.footer-three {
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--subtitle-color);
+}
+
+.footer-three div {
+    margin-right: 10rem;
+}
+
+.footer-three div p {
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.footer-three a {
+    display: flex;
+    text-decoration: none;
+    color: var(--subtitle-color);
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+.footer-four {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+    padding: 0 4rem 0 10rem;
+}
+
+.footer-four a {
+    text-decoration: none;
+    color: var(--subtitle-color);
+    font-size: 1.5rem;
+}
+
+.footer-four nav ul {
+    display: flex;
+}
+
+.footer-four nav a {
+    margin-right: 4rem;
+}
+
+nav ul li {
+    list-style: none;
+}
