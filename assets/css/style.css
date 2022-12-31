@@ -358,6 +358,10 @@ nav ul li {
 
 @media (max-width: 80rem) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     .header {
         height: 260vh;
     }
@@ -386,6 +390,10 @@ nav ul li {
     .header-img-grid {
         margin-top: 10rem;
         grid-template-columns: repeat(4, 80px);
+    }
+
+    .venda-grid {
+        grid-template-columns: 1fr;
     }
 
 }
