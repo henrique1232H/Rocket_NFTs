@@ -354,3 +354,29 @@ form button {
 nav ul li {
     list-style: none;
 }
+
+
+@media (max-width: 80rem) {
+
+    .header {
+        height: 300vh;
+    }
+
+    .header-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-column-two {
+        margin-top: 10rem;
+    }
+
+    .header-column-three {
+       display: none;
+    }
+
+    .header-img-grid {
+        margin-top: 30rem;
+        grid-template-columns: repeat(4, 100px);
+    }
+
+}
