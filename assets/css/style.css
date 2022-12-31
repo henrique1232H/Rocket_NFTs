@@ -457,4 +457,8 @@ nav ul li {
         grid-template-columns: 1fr;
     }
 
+    .a-artista {
+        padding-left: 5rem;
+    }
+
 }
