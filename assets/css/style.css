@@ -359,15 +359,24 @@ nav ul li {
 @media (max-width: 80rem) {
 
     .header {
-        height: 240vh;
+        height: 260vh;
     }
 
     .header-grid {
         grid-template-columns: 1fr;
     }
 
+    .header-column-one {
+        order: 2;
+        margin-top: 20rem;
+    }
+
+    .column-one-text  {
+        width: 30rem;
+    }
+
     .header-column-two {
-        margin-top: 10rem;
+        order: 1;
     }
 
     .header-column-three {
