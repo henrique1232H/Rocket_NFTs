@@ -461,4 +461,32 @@ nav ul li {
         padding-left: 5rem;
     }
 
+    .footer-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:  "main"
+        "form"
+        "menu"
+        "footer";
+    }
+
+    .footer-grid .footer-one {
+        padding: 0 10rem 0 6rem;
+    }
+
+    .footer-one .voltar {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .footer-two {
+        padding-right: 10rem;
+    }
+
+    .footer-three {
+        padding: 10rem 0 10rem 2rem;
+    }
+
+    .footer-four {
+        flex-direction: column;
+    }
 }
