@@ -93,7 +93,6 @@ span {
 .venda-grid div:nth-child(2) {
     height: 38vh;
     grid-area: area2;
-    border-bottom: 1px solid var(--subtitle-color);
 }
 
 .venda-grid div:nth-child(3) {
@@ -102,6 +101,7 @@ span {
     background-size: cover;
     height: 31.4vh;
     grid-area: area3;
+    border-top: 1px solid rgba(204, 204, 204, 0.519);
 }
 
 .venda-text-two {
@@ -387,13 +387,44 @@ nav ul li {
        display: none;
     }
 
+
     .header-img-grid {
         margin-top: 10rem;
         grid-template-columns: repeat(4, 80px);
     }
 
+    .venda {
+        height: 140vh;
+    }
+
     .venda-grid {
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "area1 area1"
+        "area2 area2" "area3 area3";
+        border: none;
+    }
+
+    .venda-grid .venda-text {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .venda-grid .venda-text-two {
+        border: none;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .venda-text-two div {
+
+        margin-right: 2rem;
+    }
+
+    .venda-grid .venda-img {
+        margin-top: 20rem;
     }
 
 }
