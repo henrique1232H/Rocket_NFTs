@@ -8,28 +8,18 @@
     font-size: 4rem;
 }
 
-.popular-grid {
-    display: grid;
-    grid-template-columns: 1fr 10px 1fr;
-    gap: 50rem;
-    position: relative;
-    width: 54vw;
-    height: 120vh;
+.popular-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-
-
-.popular-grid .ajuste {
-    width: 26vw;
-}
 
 .popular .spacing {
     background: rgba(204, 204, 204, 0.652);
-    position: absolute;
     width: 0.1rem;
-    height: 103vh;
-    top: 1rem;
-    left: 90%;
+    height: 104vh;
+    margin-left: 5rem;
 }
 
 
@@ -58,16 +48,14 @@
     margin-right: 1rem;
 }
 
-
+.flex-two {
+    padding-right: 5rem;
+}
 
 .arrow-white {
     margin-left: 10rem;
 }
 
-.ajustar {
-    display: flex;
-    width: 26vw;
-}
 
 .margin {
     margin-bottom: 10rem;
