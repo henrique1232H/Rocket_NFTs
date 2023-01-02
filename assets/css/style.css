@@ -498,6 +498,10 @@ nav ul li {
         margin-top: 5rem;
     }
 
+    .footer-two {
+        border-right: none;
+    }
+
     .footer-three {
         padding: 10rem 0;
         padding-left: 5rem;
